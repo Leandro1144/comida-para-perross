@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+     height: auto;
+     width: 100%;
+    /*background-image: url("imagenes/mascota.jpeg");*/
+    background-repeat:no-repeat;
+    background-color: rgb(219, 243, 0);
+      background-position-x:center;      
+      background-position-y: 0px;        
+      background-attachment: fixed;  
+      background-size: 1400px;
+      display: flex;
+      flex-direction: column;
+}
+.header{
+    background-color: rgb(5, 253, 129);
+   /* background-image: linear-gradient(to bottom, white, yellow);
+ */   width: 100%;
+    height; 100%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: row;
+}
+header img{
+    width: 2rem;
+    padding-bottom: 1rem;
+    background-color: #000;
+}
+.titulo {
+    border-color: #000;
+    margin:auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.whatsapp {
+  background-color: green;
+  color: #D4E0EE;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 20;
+}
+.contenedor1{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: .5rem;
+    background-color: gray;
+    justify-items: center;
+}
+.videoprincipal {
+flex: 1;
+padding-right: 0px;
+margin: 1px;
+margin-left: 400px;
+height: 400px;
+text-align: center;
+background-color: #000;
+border: none;
+}
+.contenedor1__img{
+    background-color: yellow;
+}
+.contenedor1__h2{
+    background-color: white;
+}
+.contenedor1__h1 {
+    background-color: aqua;
+    font-size: 18px;
+    margin-right: 0%;
+    padding-left: 0px;
+    width: 400px;
+    height: auto;
+    position: center;
+    text-align: justify;
+}
+.contenedor1 .contenedor1__iframe:nth-child(1) {  
+    order:1;
+}
+.contenedor1 .contenedor1__h1:nth-child(2){
+    order:2;
+}
+.contenedor1 .contenedor1__h2:nth-child(3){
+    order:3;
+}
+.contenedor1 .contenedor1__img:nth-child(4){
+    order:4;
+}
+.contenedor1 .contenedor1__img:nth-child(4){
+    order:4;
+}
+.seccion {
+    width: 30%;
+}
+.menu1{
+    padding-left: 0px;
+    padding-left: 6rem;
+}
+.menu{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+        margin: 1rem;
+        margin-right: 1px;
+        padding-left: 0px;
+        } 
+nav ul li{
+        display:inline-block;
+        width:10%;
+        padding:5px 10px;
+        background-color:blue;
+        border:1px solid #000;
+        text-align:center;
+        color:#fff;
+        margin: 1rem; 
+}
+.menu_a {
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    width: 100%;
+   height: 74px;
+   position: sticky;
+   bottom: 0;
+   left: 0;
+   display: block;
+   margin: auto;
+   text-align: center;
+   background-color: rgba(0, 0, 0, .5);
+   font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+.contenedores {
+    background-color: #000;
+    
+
+}
+.contenedores__div {
+    background-color: yellow;
+    overflow-y: hidden;
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    gap: 20px;
+    display: flex;
+}
+.card {
+    overflow: hidden;
+    width: 75%;
+    height: 50%;
+    margin: 5%;
+    padding-top: 0px;
+    border-radius: 16px;
+    border-width:  15px;
+    border-color: #000;
+    border: 16px;
+    background-color: red;
+    flex-direction: column;
+
+    
+}
+.card:hover{
+    transition: .5s;
+    height: 100%;
+    width: 100%;
+}
+.textos{
+height: auto;
+width: max-content;
+flex-direction: column;
+justify-content: space-between;
+background-color: blue;
+color: white;
+
+}
+@media (max-width: 1199.98px) { 
+    body {
+        background-color: green;
+    }
+    .contenedor1{
+        display: flex;
+    }
+    
+    }
+
+@media (max-width: 991.98px) { 
+body {
+    background-color: rgb(128, 62, 0)
+}
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: blue;
+}
+@media (max-width: 767.98px) { 
+    body {
+        background-color: rgb(128, 119, 0);
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        background-color: rgb(107, 18, 95);
+    }
+    .videoprincipal{
+        width: 767.98px;
+    }
+ }
+@media (max-width: 575.98px) { 
+    body {
+        background-color: rgba(228, 65, 65, 0.61);
+    }
+    .videoprincipal{
+        width: 575.98px;
+    }
+    .contenedor1{
+        flex-direction: column;
+    }
+    .header {
+        background-color: red;
+        flex-direction: column;
+    }
+ }
