@@ -12,14 +12,14 @@ body {
       background-position-y: 0px;        
       background-attachment: fixed;  
       background-size: 1400px;
-      display: grid;
-        grid-template-columns: col1 col2 col3 col4 col5 col6;
+      display: flex;
+      flex-direction: column;
 }
 .header{
     background-color: rgb(5, 253, 129);
    /* background-image: linear-gradient(to bottom, white, yellow);
  */   width: 100%;
-    height: 100%;
+    height; 100%;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
@@ -183,4 +183,56 @@ flex-direction: column;
 justify-content: space-between;
 background-color: blue;
 color: white;
+
 }
+@media (max-width: 1199.98px) { 
+    body {
+        background-color: green;
+    }
+    .contenedor1{
+        display: flex;
+    }
+    
+    }
+
+@media (max-width: 991.98px) { 
+body {
+    background-color: rgb(128, 62, 0)
+}
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: blue;
+}
+@media (max-width: 767.98px) { 
+    body {
+        background-color: rgb(128, 119, 0);
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        background-color: rgb(107, 18, 95);
+    }
+    .videoprincipal{
+        width: 767.98px;
+    }
+ }
+@media (max-width: 575.98px) { 
+    body {
+        background-color: rgba(228, 65, 65, 0.61);
+    }
+    .videoprincipal{
+        width: 575.98px;
+    }
+    .contenedor1{
+        flex-direction: column;
+    }
+    .header {
+        background-color: red;
+        flex-direction: column;
+    }
+ }
