@@ -56,15 +56,13 @@ header {
 text-decoration:none;
 color:inherit;
 font-size:14px;
-} 
-nav li{
 display:inline-block;
 padding:5px 10px;
 background-color:#000;
 border:1px solid #000;
 text-align:center;
 color:#fff;
-}
+} 
 .main {
     
     display: grid;
