@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: url("imagenes/mascota.jpeg");
     background-color: darkorange;
@@ -7,7 +12,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-areas: 
-    "header header header"
+    "main main main"
     "main main main"
     "main main main"
     "footer footer footer";
@@ -18,16 +23,14 @@ body{
 /*.border {
     border: 1px solid black;
 }*/
-header {
-    width: 220vh;
+/*.header {
     background-color: #000;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-   
-}
+}*/
 .titulo {
     padding-left: 300px;
 
@@ -56,13 +59,15 @@ header {
 text-decoration:none;
 color:inherit;
 font-size:14px;
+} 
+/*nav li{
 display:inline-block;
 padding:5px 10px;
 background-color:#000;
 border:1px solid #000;
 text-align:center;
 color:#fff;
-} 
+}*/
 .main {
     
     display: grid;
@@ -176,16 +181,11 @@ aside{
   }
   .header_open{
       display: none;
-      font-size: 32px;
-      color: white;
-      text-decoration: none;
   }
   @media screen and (max-width: 1023px) {
-      .header{
-            display: flex;
-            flex-direction: row;
-            width: 206vh;
-      }
+    .header__open {
+        display: none;
+    }
     }
     .header_open{
         display: none;
@@ -198,7 +198,16 @@ aside{
         height: 99px;
      }
   @media screen and (max-width: 600px){
-      .grilla {
+    .header {
+        flex-direction: row;
+    }  
+    .header__open {
+        display: block;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+    }
+    .grilla {
           width: 100%;
       }
     
@@ -216,10 +225,6 @@ aside{
           "card3"
           "card4";
       }
-      .nav {
-          width: 1000px;
-
-      }
       .iframe_video{
           width: 210vh;
           height: 600px;
@@ -231,10 +236,4 @@ aside{
         width: 210vh;
         height: 99px;
      }
-     .header_open{
-        display: block;
-        font-size: 130px;
-        color: white;
-        text-decoration: none;
-     }
-    }
+    
