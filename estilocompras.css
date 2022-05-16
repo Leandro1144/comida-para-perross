@@ -1,0 +1,39 @@
+.main{
+    
+    display: flex;
+}
+
+.cartelcompra{
+background-color: white;
+justify-content: center;
+margin: 10rem;
+align-items: center;
+border-top-color: #CC0000;
+border-right-color: blue;
+border-bottom-color: #00FF00;
+border-left-color: #CCC;
+z-index: auto;
+border-radius: 2rem
+}
+.textocompra{
+    border-width: 1rem;
+    font-size: 50px;
+    color:blue;
+    justify-content: center;
+    margin: 1rem;
+    align-items: center;
+    border-top-color: #CC0000;
+    border-right-color: blue;
+    border-bottom-color: #00FF00;
+    border-left-color: #CCC;
+}
+@media screen and (max-width: 1023px){
+    .textocompra{
+        font-size:20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .textocompra{
+        font-size:15px;
+    }
+}
