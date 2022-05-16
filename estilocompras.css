@@ -31,9 +31,15 @@ border-radius: 2rem
     .textocompra{
         font-size:20px;
     }
+    .cartelcompra{
+        margin: 7rem;
+    }
 }
 @media screen and (max-width: 600px){
     .textocompra{
         font-size:15px;
+    }
+    .cartelcompra{
+        margin: 3rem;
     }
 }
