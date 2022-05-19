@@ -1,0 +1,46 @@
+body {
+    background-image: url("../imagenes/Wave.svg");
+}
+
+.carousel{
+margin-top: 1rem;
+}
+.navbar {
+    background-color: rgb(255, 239, 8) !important;
+}
+.logo {
+    border-radius: 75px ;
+}
+.main {
+    display: flex;;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.header{
+    justify-content: space-between;
+}
+.main {
+    display:flex;
+    flex-direction: row;
+}
+.whatsapp {
+    background-color: #18ca21;
+    color: #D4E0EE;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 20;
+    border-radius: 5rem;
+  }
+ .text-muted{
+      color: black !important;;
+  }
