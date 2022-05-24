@@ -1,3 +1,6 @@
+$ancho: 50%;
+$alto: auto;
+
 .contenedorvideo{
     display: flex;
     flex-direction: row;
@@ -7,6 +10,6 @@
     margin-bottom: 1rem;
 }
 .video{
-    width: 50%;
-    height: auto;
+    width: $ancho;
+    height: $alto;
 }

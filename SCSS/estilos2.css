@@ -13,7 +13,7 @@
 }
 
 .navegador {
-  background-color: #1022ca;
+  background-color: #3810ca;
   margin-top: 1rem;
 }
 
@@ -90,6 +90,18 @@ body {
 @media screen and (max-width: 1023px) {
   .navegador {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body .card-title {
+    color: #0059ff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .card-title {
+    color: red;
   }
 }
 /*# sourceMappingURL=estilos2.css.map */

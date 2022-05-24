@@ -2,4 +2,36 @@
     .navegador {
       display: none;
     }
+    
   }
+  
+  $vistad:tablet;
+  body{
+    @if $vistad==tablet{
+      @media only screen and (max-width: 1023px){
+        .card-title {color: rgb(0, 89, 255);}
+      }
+    }@else if $vistad==mobile{
+      @media only screen and (max-width: 767px){
+        .card-title {color: red;}
+      }
+    }@else {
+      .card-title{color: yellow;}
+    }
+  }
+
+  $vista:mobile;
+  body{
+    @if $vista==desktop{
+      @media only screen and (min-width: 1023px){
+        .card-title {color: red;}
+      }
+    }@else if $vista==mobile{
+      @media only screen and (max-width: 767px){
+        .card-title {color: red;}
+      }
+    }@else {
+      .card-title{color: yellow;}
+    }
+  }
+  
