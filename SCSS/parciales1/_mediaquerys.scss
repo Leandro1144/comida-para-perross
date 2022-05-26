@@ -2,9 +2,18 @@
     .navegador {
       display: none;
     }
-    
-  }
-  
+    }
+    @media screen and (max-width: 600px){
+      .contenedorcard{
+        position: relative;
+        left: 3rem;
+        gap: 1rem;
+      }
+      .video{
+        width: 100%;
+      }
+    }
+ 
   $vistad:tablet;
   body{
     @if $vistad==tablet{

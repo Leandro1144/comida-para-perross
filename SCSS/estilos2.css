@@ -43,7 +43,16 @@ body {
 }
 
 .navbar {
-  background-color: #ffef08 !important;
+  background-color: #ce6714 !important;
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  border-style: hidden !important;
+}
+
+.nav-link:hover {
+  color: #ccc1c1 !important;
 }
 
 .logo {
@@ -90,6 +99,17 @@ body {
 @media screen and (max-width: 1023px) {
   .navegador {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedorcard {
+    position: relative;
+    left: 3rem;
+    gap: 1rem;
+  }
+  .video {
+    width: 100%;
   }
 }
 

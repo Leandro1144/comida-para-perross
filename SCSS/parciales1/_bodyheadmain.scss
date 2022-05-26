@@ -2,12 +2,20 @@ body {
     background-image: url("../imagenes/Wave.svg");
 }
 
+
 .carousel{
 margin-top: 1rem;
 }
 .navbar {
-    background-color: rgb(255, 239, 8) !important;
+    background-color: rgb(206, 103, 20) !important;
 }
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    border-style: hidden!important;
+  }
+  .nav-link:hover {
+    color: rgb(204, 193, 193)!important;
+  }
 .logo {
     border-radius: 75px ;
 }

@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedorvideo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 0 0%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body {
+  background-image: url("../imagenes/Wave.svg");
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
+  border-style: hidden !important;
+}
+
+.nav-link:hover {
+  color: #ccc1c1 !important;
+}
+
+.contenedorcontacto {
+  position: center;
+  display: flex;
+  flex-direction: row;
+  border: 16px;
+  border-color: #D4E0EE;
+  background-color: #D4E0EE;
+}
+
+.formulario {
+  width: 50%;
+}
+
+.h1compra {
+  text-decoration: underline;
+}
+
+.mapa {
+  width: 50%;
+}
+
+.mapadir {
+  width: 456px;
+  height: 456px;
+}
+
+.video {
+  width: 50%;
+  height: auto;
+}
+
+.carousel {
+  margin-top: 1rem;
+}
+
+.logo {
+  border-radius: 75px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  top: 0rem;
+  left: 7rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.contenedorcard {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  flex-direction: row;
+}
+
+.navegador {
+  background-color: blue;
+  margin-top: 1rem;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.whatsapp {
+  background-color: green;
+  color: #D4E0EE;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 20;
+  border-radius: 5rem;
+}
+
+.text-muted {
+  color: black !important;
+}
+
+.premium1 {
+  min-height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+  .navegador {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contenedorcontacto {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .formulario {
+    width: 270px;
+  }
+  .premium1 {
+    padding: 0px;
+  }
+  .container {
+    position: static;
+  }
+  .mapadir {
+    width: 270px;
+  }
+}
+/*# sourceMappingURL=estiloscontacto.css.map */
