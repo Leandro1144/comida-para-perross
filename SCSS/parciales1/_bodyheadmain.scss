@@ -1,5 +1,5 @@
 body {
-    background-image: url("../imagenes/Wave.svg");
+    background-image: linear-gradient(to left, blue, yellow);
 }
 
 
@@ -7,11 +7,13 @@ body {
 margin-top: 1rem;
 }
 .navbar {
-    background-color: rgb(206, 103, 20) !important;
+    background-image: linear-gradient(to right, yellow, blue);
+    background-color: rgb(190, 185, 207) !important;
 }
 .nav-link {
     font-family: 'Oswald', sans-serif;
     border-style: hidden!important;
+    font-size: 25px;
   }
   .nav-link:hover {
     color: rgb(204, 193, 193)!important;
@@ -37,6 +39,7 @@ margin-top: 1rem;
     display:flex;
     flex-direction: row;
 }
+
 .whatsapp {
     background-color: #18ca21;
     color: #D4E0EE;
@@ -50,5 +53,9 @@ margin-top: 1rem;
     border-radius: 5rem;
   }
  .text-muted{
-      color: black !important;;
+      color: black !important;
+      font-size: 15px;
+  }
+  footer{
+      padding-bottom: 0px;
   }

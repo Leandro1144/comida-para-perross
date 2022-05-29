@@ -13,12 +13,30 @@
 }
 
 .navegador {
-  background-color: #3810ca;
+  background-color: none;
   margin-top: 1rem;
 }
 
+.navegador1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.navegador2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.nav-video {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
-  background-color: #dad0e4;
+  background-image: linear-gradient(to right, blue, yellow);
   display: flex;
   flex-direction: column !important;
 }
@@ -34,8 +52,19 @@
   flex-direction: row;
 }
 
+.col {
+  padding: 10px;
+}
+
+.titulo-marcas {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: underline;
+  gap: 5px;
+}
+
 body {
-  background-image: url("../imagenes/Wave.svg");
+  background-image: linear-gradient(to left, blue, yellow);
 }
 
 .carousel {
@@ -43,12 +72,14 @@ body {
 }
 
 .navbar {
-  background-color: #ce6714 !important;
+  background-image: linear-gradient(to right, yellow, blue);
+  background-color: #beb9cf !important;
 }
 
 .nav-link {
   font-family: 'Oswald', sans-serif;
   border-style: hidden !important;
+  font-size: 25px;
 }
 
 .nav-link:hover {
@@ -94,19 +125,32 @@ body {
 
 .text-muted {
   color: black !important;
+  font-size: 15px;
+}
+
+footer {
+  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 1023px) {
   .navegador {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contenedorcard {
     position: relative;
-    left: 3rem;
+    left: 1rem;
     gap: 1rem;
+  }
+  .nav-video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .video {
     width: 100%;

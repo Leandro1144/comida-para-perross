@@ -1,14 +1,22 @@
 @media screen and (max-width: 1023px){
-    .navegador {
-      display: none;
+    .navegador{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     }
     @media screen and (max-width: 600px){
       .contenedorcard{
         position: relative;
-        left: 3rem;
+        left: 1rem;
         gap: 1rem;
       }
+      .nav-video{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
       .video{
         width: 100%;
       }

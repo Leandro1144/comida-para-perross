@@ -1,5 +1,20 @@
 .navegador {
-    background-color: rgb(56, 16, 202);
+    background-color: none;
     margin-top: 1rem;
+}
+.navegador1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.navegador2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.nav-video{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
  

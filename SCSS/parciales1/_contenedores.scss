@@ -1,5 +1,5 @@
 .container {
-    background-color: rgb(218, 208, 228);
+    background-image: linear-gradient(to right, blue, yellow);
     display: flex;
     flex-direction: column !important;
 }
@@ -14,3 +14,12 @@
         margin-left: calc(-.5 * var(--bs-gutter-x));
         flex-direction: row;
     }
+    .col {
+        padding: 10px;
+    }
+.titulo-marcas{
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    gap: 5px;
+}
