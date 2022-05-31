@@ -1,5 +1,7 @@
 body {
     background-image: linear-gradient(to left, blue, yellow);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -7,13 +9,14 @@ body {
 margin-top: 1rem;
 }
 .navbar {
-    background-image: linear-gradient(to right, yellow, blue);
+    background-image: linear-gradient(to right, yellow, rgb(68, 68, 255));
     background-color: rgb(190, 185, 207) !important;
 }
 .nav-link {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif!important;
     border-style: hidden!important;
     font-size: 25px;
+    color: rgb(53, 8, 8)!important;
   }
   .nav-link:hover {
     color: rgb(204, 193, 193)!important;
@@ -39,7 +42,6 @@ margin-top: 1rem;
     display:flex;
     flex-direction: row;
 }
-
 .whatsapp {
     background-color: #18ca21;
     color: #D4E0EE;
@@ -55,7 +57,4 @@ margin-top: 1rem;
  .text-muted{
       color: black !important;
       font-size: 15px;
-  }
-  footer{
-      padding-bottom: 0px;
   }

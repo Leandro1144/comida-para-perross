@@ -63,8 +63,40 @@
   gap: 5px;
 }
 
+.contenedornosotros {
+  display: flex;
+  flex-direction: row;
+  padding: 6rem;
+}
+
+.contenedorproductos {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  background-color: #D4E0EE;
+  position: relative;
+}
+
+.comida {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.adulto {
+  width: 250px;
+}
+
+.quienesomos {
+  justify-content: center;
+  font-family: 'Recursive', sans-serif;
+  font-size: 20px;
+}
+
 body {
   background-image: linear-gradient(to left, blue, yellow);
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel {
@@ -72,14 +104,15 @@ body {
 }
 
 .navbar {
-  background-image: linear-gradient(to right, yellow, blue);
+  background-image: linear-gradient(to right, yellow, #4444ff);
   background-color: #beb9cf !important;
 }
 
 .nav-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif !important;
   border-style: hidden !important;
   font-size: 25px;
+  color: #350808 !important;
 }
 
 .nav-link:hover {
@@ -126,10 +159,6 @@ body {
 .text-muted {
   color: black !important;
   font-size: 15px;
-}
-
-footer {
-  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 1023px) {
