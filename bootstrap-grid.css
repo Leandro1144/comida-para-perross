@@ -118,6 +118,7 @@
 
 .col {
   flex: 1 0 0%;
+  background-color: none!important;
 }
 
 .row-cols-auto > * {
