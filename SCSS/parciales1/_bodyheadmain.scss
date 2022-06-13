@@ -1,5 +1,6 @@
 body {
-    background-image: linear-gradient(to left, blue, yellow);
+    background-image: url("../imagenes/fondo.jpeg");
+    background-color: rgb(175, 64, 0);
     display: flex;
     flex-direction: column;
 }
@@ -9,25 +10,23 @@ body {
 margin-top: 1rem;
 }
 .navbar {
-    background-image: linear-gradient(to right, yellow, rgb(68, 68, 255));
-    background-color: rgb(190, 185, 207) !important;
+   background-color:rgb(175, 64, 0)!important;
+   
+  
 }
 .nav-link {
     font-family: 'Oswald', sans-serif!important;
     border-style: hidden!important;
     font-size: 25px;
-    color: rgb(53, 8, 8)!important;
+    color: rgb(245, 245, 245)!important;
   }
   .nav-link:hover {
-    color: rgb(204, 193, 193)!important;
+    color: rgb(15, 14, 14)!important;
   }
 .logo {
     border-radius: 75px ;
 }
-.main {
-    display: flex;;
-    flex-direction: column;
-}
+
 .row{
     display: flex;
     flex-direction: column;
@@ -39,13 +38,12 @@ margin-top: 1rem;
     justify-content: space-between;
 }
 .main {
+    width: 100%;
     display:flex;
     flex-direction: row;
 }
 .whatsapp {
-    background-color: #18ca21;
-    color: #D4E0EE;
-    text-decoration: none;
+    background-color: none;
     padding: 0.5rem 1rem;
     display: inline-block;
     position: fixed;
@@ -53,6 +51,10 @@ margin-top: 1rem;
     right: 2rem;
     z-index: 20;
     border-radius: 5rem;
+  }
+  .whatsapp:hover{
+      transform: scale(1.15);
+      opacity: 0.8;
   }
  .text-muted{
       color: black !important;

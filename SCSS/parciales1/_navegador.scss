@@ -4,13 +4,21 @@
 }
 .navegador1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: underline;
+    color:white;
 }
 .navegador2{
     font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
+    font-size: 20px;
     padding-left: 5px;
+    color:white;
+}
+.navegador2:hover{
+    transform: scale(1.25);
+    padding-left: 10px;
+    margin-left: 10px;
+    opacity: 0.8;
 }
 .nav-video{
     align-items: center;

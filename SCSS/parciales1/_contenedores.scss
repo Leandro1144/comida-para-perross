@@ -1,5 +1,6 @@
 .container {
-    background-image: linear-gradient(to right, blue, yellow);
+    width: 100%;
+    background-color: rgb(175, 64, 0);
     display: flex;
     flex-direction: column !important;
 }
@@ -14,14 +15,54 @@
         margin-left: calc(-.5 * var(--bs-gutter-x));
         flex-direction: row;
     }
+    .card-img-top{
+        border-radius: 5rem;
+        transition: transform 0.25s;
+    }
+.card-img-top:hover{
+    transform: scale(1.15);
+}
+.card{
+    background-color: none;
+}
     .col {
         padding: 10px;
     }
+    .card-title{
+        font-family: 'Bebas Neue', cursive;
+    }
+    .btn-primary{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 24px;
+        background-color:rgb(175, 64, 0)!important;
+    }
 .titulo-marcas{
-    margin-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 40px;
     text-align: center;
-    text-decoration: underline;
     gap: 5px;
+    color: white;
+}
+.textocompra{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    background-color:rgb(175, 64, 0);
+    align-items: center;
+    color:white;
+    padding:1rem;
+    margin:18rem;
+    margin-left: 26rem;
+}
+.iranosotros{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+}
+.formulario{
+    padding-left: 2rem;
+    padding: 2rem;
+    background-color: #D4E0EE;
+    font-family: 'Bebas Neue', cursive;
 }
 .contenedornosotros{
     display: flex;
@@ -45,6 +86,27 @@
 }
 .quienesomos{
     justify-content: center;
-    font-family: 'Recursive', sans-serif;
-    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
 }
+.mapa{
+padding-left: 1rem;
+border:2px;
+border-color: black;
+}
+.guardar{
+    text-decoration: none;
+    color:black;
+}
+.contenedorcontacto {
+    position: center;
+    display: flex;
+    flex-direction: row;
+    border: 16px;
+    border-color: #D4E0EE;
+    background-color: #D4E0EE;
+    margin-top: 2rem;
+  }
+  .containercontacto{
+    padding: 2rem;
+  }

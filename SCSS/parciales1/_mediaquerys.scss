@@ -20,8 +20,38 @@
       .video{
         width: 100%;
       }
+      .textocompra{
+        margin:3rem;
+        margin-top: 6rem;
+        margin-bottom: 11rem;
+      }
+      .iranosotros{
+        text-decoration: none;
+        font-family: 'Bebas Neue', cursive;
+        color: midnightblue;
     }
- 
+    .formulario{
+      width: 390px;
+  }
+  .premium1{
+      padding: 0px;
+  }
+  .container {
+      position: static;
+  }
+  .mapa{
+    padding-top: 1rem;
+    width: auto;
+  }
+  .mapadir{
+    width: 390px;
+    padding-right: 1rem;
+  }
+  .contenedorcontacto{
+    flex-direction: column;
+    gap:1rem;
+  }
+  }
   $vistad:tablet;
   body{
     @if $vistad==tablet{
@@ -51,4 +81,3 @@
       .card-title{color: yellow;}
     }
   }
-  
