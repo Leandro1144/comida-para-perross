@@ -19,14 +19,23 @@
 
 .navegador1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: underline;
+  color: white;
 }
 
 .navegador2 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 15px;
+  font-size: 20px;
   padding-left: 5px;
+  color: white;
+}
+
+.navegador2:hover {
+  transform: scale(1.25);
+  padding-left: 10px;
+  margin-left: 10px;
+  opacity: 0.8;
 }
 
 .nav-video {
@@ -36,7 +45,8 @@
 }
 
 .container {
-  background-image: linear-gradient(to right, blue, yellow);
+  width: 100%;
+  background-color: #af4000;
   display: flex;
   flex-direction: column !important;
 }
@@ -52,15 +62,63 @@
   flex-direction: row;
 }
 
+.card-img-top {
+  border-radius: 5rem;
+  transition: transform 0.25s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.15);
+}
+
+.card {
+  background-color: none;
+}
+
 .col {
   padding: 10px;
 }
 
+.card-title {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn-primary {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  background-color: #af4000 !important;
+}
+
 .titulo-marcas {
-  margin-top: 10px;
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 40px;
   text-align: center;
-  text-decoration: underline;
   gap: 5px;
+  color: white;
+}
+
+.textocompra {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  background-color: #af4000;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  margin: 18rem;
+  margin-left: 26rem;
+}
+
+.iranosotros {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+.formulario {
+  padding-left: 2rem;
+  padding: 2rem;
+  background-color: #D4E0EE;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .contenedornosotros {
@@ -89,12 +147,38 @@
 
 .quienesomos {
   justify-content: center;
-  font-family: 'Recursive', sans-serif;
-  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}
+
+.mapa {
+  padding-left: 1rem;
+  border: 2px;
+  border-color: black;
+}
+
+.guardar {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedorcontacto {
+  position: center;
+  display: flex;
+  flex-direction: row;
+  border: 16px;
+  border-color: #D4E0EE;
+  background-color: #D4E0EE;
+  margin-top: 2rem;
+}
+
+.containercontacto {
+  padding: 2rem;
 }
 
 body {
-  background-image: linear-gradient(to left, blue, yellow);
+  background-image: url("../imagenes/fondo.jpeg");
+  background-color: #af4000;
   display: flex;
   flex-direction: column;
 }
@@ -104,28 +188,22 @@ body {
 }
 
 .navbar {
-  background-image: linear-gradient(to right, yellow, #4444ff);
-  background-color: #beb9cf !important;
+  background-color: #af4000 !important;
 }
 
 .nav-link {
   font-family: "Oswald", sans-serif !important;
   border-style: hidden !important;
   font-size: 25px;
-  color: #350808 !important;
+  color: whitesmoke !important;
 }
 
 .nav-link:hover {
-  color: #ccc1c1 !important;
+  color: #0f0e0e !important;
 }
 
 .logo {
   border-radius: 75px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
 }
 
 .row {
@@ -139,14 +217,13 @@ body {
 }
 
 .main {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 .whatsapp {
-  background-color: #18ca21;
-  color: #D4E0EE;
-  text-decoration: none;
+  background-color: none;
   padding: 0.5rem 1rem;
   display: inline-block;
   position: fixed;
@@ -154,6 +231,11 @@ body {
   right: 2rem;
   z-index: 20;
   border-radius: 5rem;
+}
+
+.whatsapp:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
 }
 
 .text-muted {
@@ -183,6 +265,37 @@ body {
   }
   .video {
     width: 100%;
+  }
+  .textocompra {
+    margin: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 11rem;
+  }
+  .iranosotros {
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: midnightblue;
+  }
+  .formulario {
+    width: 390px;
+  }
+  .premium1 {
+    padding: 0px;
+  }
+  .container {
+    position: static;
+  }
+  .mapa {
+    padding-top: 1rem;
+    width: auto;
+  }
+  .mapadir {
+    width: 390px;
+    padding-right: 1rem;
+  }
+  .contenedorcontacto {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
