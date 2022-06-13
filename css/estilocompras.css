@@ -15,7 +15,11 @@ border-left-color: #CCC;
 z-index: auto;
 border-radius: 2rem
 }
+.transform-traslate{
+    font-family: 'Bebas Neue', cursive;
+}
 .textocompra{
+    font-family: 'Bebas Neue', cursive;
     border-width: 1rem;
     font-size: 50px;
     color:blue;
